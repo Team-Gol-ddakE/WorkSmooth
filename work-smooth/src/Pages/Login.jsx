@@ -1,11 +1,15 @@
-import React from "react";
+import React, { Fragment } from "react";
+import * as Styles from "../global/Styles"
 
 class Login extends React.Component {
   render(){
     return(
-      <div>
-        로그인 페이지의 내용
-      </div>
+      <Styles.Wrapper>
+        <Styles.DecoText>WorkSmooth</Styles.DecoText>
+        <Styles.Panel>
+          dfasfdsaf
+        </Styles.Panel>
+      </Styles.Wrapper>
     )
   }
 }
