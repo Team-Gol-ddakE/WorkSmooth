@@ -1,6 +1,6 @@
-import Styled from "styled-components";
+import styled from "styled-components";
 
-export const DecoText = Styled.h1`
+export const DecoText = styled.h1`
   font-size: 80px;
   font-weight: bold;
   text-align: center;
@@ -8,14 +8,30 @@ export const DecoText = Styled.h1`
   color: #DAABF7;
 `
 
-export const Wrapper = Styled.div`
+export const Wrapper = styled.div`
   width: 100%;
   height: 100%;
   text-align: center;
 `
 
-export const Panel = Styled.div`
+export const Panel = styled.div`
  padding: 8px;
  background: white;
  display: inline-block;
+`
+
+
+//Test Sets
+
+export const Text = styled.span`
+  font-size: 13px;
+`
+
+export const TitleText = styled.span`
+  font-size: 24px;
+  font-weight: bold;
+`
+
+export const Input = styled.input`
+
 `

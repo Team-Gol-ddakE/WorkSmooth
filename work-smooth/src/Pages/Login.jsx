@@ -1,5 +1,11 @@
 import React, { Fragment } from "react";
-import * as Styles from "../global/Styles"
+import * as Styles from "../global/Styles";
+
+
+const titStyle = {
+  display: "block",
+  marginBottom: "16px",
+}
 
 class Login extends React.Component {
   render(){
@@ -7,7 +13,9 @@ class Login extends React.Component {
       <Styles.Wrapper>
         <Styles.DecoText>WorkSmooth</Styles.DecoText>
         <Styles.Panel>
-          dfasfdsaf
+          <Styles.TitleText style={titStyle}>Login</Styles.TitleText>
+          <Styles.Text>ID</Styles.Text><Styles.Input></Styles.Input><br/>
+          <Styles.Text>PW</Styles.Text><Styles.Input></Styles.Input>
         </Styles.Panel>
       </Styles.Wrapper>
     )
