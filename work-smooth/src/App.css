@@ -6,6 +6,7 @@ html, body, #root{
   font-family: 'Nanum Gothic', sans-serif;
   box-sizing: border-box;
   color: black;
+  font-size: 13px;
 }
 
 #root{

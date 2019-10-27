@@ -1,7 +1,22 @@
 import styled from "styled-components";
 
+const switchSizeFunc = (size, big, normal, small) => {
+  if(!size){
+    return normal;
+  }
+
+  switch(size){
+    case "big":
+      return big;
+    case "small":
+      return small;
+    default:
+      return normal;
+  }
+}
+
 export const DecoText = styled.h1`
-  font-size: 80px;
+  font-size: 6rem;
   font-weight: bold;
   text-align: center;
   user-select: none;
@@ -18,20 +33,26 @@ export const Panel = styled.div`
  padding: 8px;
  background: white;
  display: inline-block;
+ border-radius: 4px;
+ box-shadow: 0 1px 3px 0 #888888;
 `
 
 
 //Test Sets
 
 export const Text = styled.span`
-  font-size: 13px;
+  font-size: ${props => switchSizeFunc(props.size, "1.8", "1", "0.8")}rem;
 `
 
 export const TitleText = styled.span`
-  font-size: 24px;
+  font-size: 2rem;
   font-weight: bold;
+  margin-bottom: 16px;
+  display: block;
 `
 
 export const Input = styled.input`
-
+  height: 32px;
+  font-size: 1.2rem;
+  padding-left: 4px;
 `

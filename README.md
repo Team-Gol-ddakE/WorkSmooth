@@ -6,5 +6,6 @@ Project management support program
 
 White - #FFFFFF
 Black - #000000
-Gray - #F1F3F5
+Gary1 - #888888
+Gray2 - #F1F3F5
 Purple - #DAABF7

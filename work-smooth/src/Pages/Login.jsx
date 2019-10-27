@@ -1,21 +1,25 @@
-import React, { Fragment } from "react";
+import React from "react";
 import * as Styles from "../global/Styles";
 
+const pannelStyle = {
+  marginTop: "80px",
+  padding: "0 32px 16px"
+}
 
-const titStyle = {
-  display: "block",
-  marginBottom: "16px",
+const InputStyle = {
+  width: "400px",
+  marginLeft: "16px",
+  marginBottom: "24px",
 }
 
 class Login extends React.Component {
   render(){
     return(
       <Styles.Wrapper>
+        <Styles.Panel style={pannelStyle}>
         <Styles.DecoText>WorkSmooth</Styles.DecoText>
-        <Styles.Panel>
-          <Styles.TitleText style={titStyle}>Login</Styles.TitleText>
-          <Styles.Text>ID</Styles.Text><Styles.Input></Styles.Input><br/>
-          <Styles.Text>PW</Styles.Text><Styles.Input></Styles.Input>
+          <Styles.Input placeholder="아이디" style={InputStyle}></Styles.Input><br/>
+          <Styles.Input placeholder="비밀번호" style={InputStyle}></Styles.Input>
         </Styles.Panel>
       </Styles.Wrapper>
     )

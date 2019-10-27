@@ -1,10 +1,6 @@
 import React from "react";
 
 class Main extends React.Component {
-  constructor(props){
-    super(props);
-  }
-
   componentWillMount(){
     this.props.history.push('/login');
   }
@@ -12,7 +8,7 @@ class Main extends React.Component {
   render(){
     return(
       <div stlye={{border: "1px solid black"}} onClick={this.clickEvent}>
-        날 눌러줘 
+        날 눌러줘
       </div>
     )
   }
